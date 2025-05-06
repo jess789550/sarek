@@ -249,5 +249,7 @@ dx build --nextflow \
 dx run project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/sarek \
   -i debug=false \
   --destination project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/ \
-  --brief -y
+  --brief -y \
+  -ioutdir=project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/ \
+  -iinput=project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/samplesheet.csv
 ```

@@ -1,2 +1,2 @@
 patient,sample,lane,fastq_1,fastq_2
-TESTX_H7YRLADXX,S1,L001,/data/jess_tmp/my_first_wdl_pipeline/TESTX_H7YRLADXX_S1_L001_R1_001.fastq.gz,/data/jess_tmp/my_first_wdl_pipeline/TESTX_H7YRLADXX_S1_L001_R2_001.fastq.gz
+TESTX_H7YRLADXX,S1,L001,project-Gzzg5v04B4q15JF0kGj8ZBxj:/test_pipeline/TESTX_H7YRLADXX_S1_L001_R1_001.fastq.gz,project-Gzzg5v04B4q15JF0kGj8ZBxj:/test_pipeline/TESTX_H7YRLADXX_S1_L001_R2_001.fastq.gz
