@@ -235,7 +235,7 @@ export PATH="$JAVA_HOME/bin:$PATH:/home/jess" # java v21 and nf-test
 nextflow run nf-core/sarek  \
   --input samplesheet.csv  \
   --outdir /data/jess_tmp/sarek_results/ \
-  --tools haplotypecaller,mutect2,vep
+  --tools haplotypecaller,vep
 ```
 
 ## Run in DNAnexus
@@ -253,5 +253,5 @@ dx run project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/sarek \
   -ioutdir=project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/ \
   -iinput=project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/samplesheet.csv \
   -inextflow_run_opts="-profile docker" \
-  -itools="haplotypecaller,mutect2,vep"
+  -itools="haplotypecaller,vep"
 ```
