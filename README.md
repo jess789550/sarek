@@ -235,8 +235,10 @@ export PATH="$JAVA_HOME/bin:$PATH:/home/jess" # java v21 and nf-test
 nextflow run nf-core/sarek  \
   --input samplesheet.csv  \
   --outdir /data/jess_tmp/sarek_results/ \
-  --tools haplotypecaller,vep \
   -profile docker
+
+# Takes a long time and a lot of memory and time with tools
+  --tools haplotypecaller,vep
 ```
 
 ## Run in DNAnexus
@@ -253,6 +255,8 @@ dx run project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/sarek \
   --brief -y \
   -ioutdir=project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/ \
   -iinput=project-Gzzg5v04B4q15JF0kGj8ZBxj:sarek/samplesheet.csv \
-  -inextflow_run_opts="-profile docker" \
+  -inextflow_run_opts="-profile docker"
+  
+# Takes a long time and a lot of memory and time with tools
   -itools="haplotypecaller,vep"
 ```
